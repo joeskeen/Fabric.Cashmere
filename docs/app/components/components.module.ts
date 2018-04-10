@@ -31,8 +31,8 @@ import { SelectDemoComponent } from './select/select-demo.component';
 import { AppSwitcherModule } from '../../../lib/src/app-switcher/app-switcher.module';
 import { MockAppSwitcherService } from '../../../lib/src/app-switcher/app-switcher.service';
 import { DrawerDemoComponent } from './drawer/drawer-demo.component';
-import { IconModule } from '../../../lib/src/icon';
-import { DrawerModule } from '../../../lib/src/drawer';
+import { IconModule } from '../../../lib/src/icon/icon.module';
+import { DrawerModule } from '../../../lib/src/drawer/drawer.module';
 import { HomeComponent } from '../home/home.component';
 import { IconDemoComponent } from './icon/icon-demo.component';
 import { ListDemoComponent } from './list/list-demo.component';
@@ -55,6 +55,8 @@ import { LabelModule } from '../../../lib/src/label/label.module';
 import { ProgressIndicatorDemoComponent } from './progress-indicator/progress-indicator-demo.component';
 import { SharedModule } from '../shared/shared.module';
 import { GridDemoComponent } from './grid/grid-demo.component';
+import { PaginationModule } from '../../../lib/src/pagination/pagination.module';
+import { PaginationDemoComponent } from './pagination/pagination-demo.component';
 
 @NgModule({
     imports: [
@@ -83,7 +85,7 @@ import { GridDemoComponent } from './grid/grid-demo.component';
         ChipModule,
         InputModule,
         LabelModule,
-        ModalModule,
+        PaginationModule,
         SharedModule,
         RouterModule.forRoot(routes)
     ],
@@ -120,7 +122,8 @@ import { GridDemoComponent } from './grid/grid-demo.component';
         FilterButtonComponent,
         TypeFormSurveyDemoComponent,
         InputDemoComponent,
-        ModalDemoComponent
+        ModalDemoComponent,
+        PaginationDemoComponent
     ],
     providers: [
         {

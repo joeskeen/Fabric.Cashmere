@@ -1,4 +1,4 @@
-<hc-navbar appIcon="./assets/CashmereAppLogo.svg" homeUri="/home" fixedTop="true">
+<hc-navbar appIcon="./assets/CashmereAppLogo.svg" brandIcon="./assets/TriFlame.svg" homeUri="/home" fixedTop="true">
     <hc-navbar-link uri="/home" linkText="Home"></hc-navbar-link>
     <hc-navbar-link uri="/styles" linkText="Styles"></hc-navbar-link>
     <hc-navbar-link uri="/components" linkText="Components"></hc-navbar-link>
@@ -8,7 +8,7 @@
             <hc-icon fontSet="fa" fontIcon="fa-github" icon-lg></hc-icon>
         </a>
     </hc-navbar-icon>
-    <hc-navbar-menu appSwitcher="true">
+    <hc-navbar-mobile-menu appSwitcher="true">
         <hc-list>
             <hc-list-item routerLink="/home" routerLinkActive="active-link">
                 <span hcListLine>Home</span>
@@ -31,7 +31,7 @@
                 </hc-list-item>
             </a>
         </hc-list>
-    </hc-navbar-menu>
+    </hc-navbar-mobile-menu>
 </hc-navbar>
 
 <router-outlet></router-outlet>
