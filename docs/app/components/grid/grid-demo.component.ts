@@ -14,6 +14,9 @@ export class GridDemoComponent {
         sortByColumn: 'heading1',
         sortDirection: 'desc'
     };
+    get totalPages() {
+        return Math.ceil(this.rows.length / (this.gridOptions.rowsPerPage || 10));
+    }
     rows = [
         {
             heading1: 'A',
